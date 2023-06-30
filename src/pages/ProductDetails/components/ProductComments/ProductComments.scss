@@ -1,0 +1,152 @@
+@import '../../../../scss/variables';
+
+.product-comments {
+   // display: grid;
+   // grid-template-columns: repeat(3, 1fr);
+   // grid-gap: 20px;
+
+   &__item {
+      
+      display: flex;
+      flex-direction: column;
+
+      padding: 20px;
+      background-color: #F2F5F9;
+      border-radius: 10px;
+
+      // box-shadow: 0 6px 16px rgb(0 26 52 / 16%), 0 0 0 rgb(0 26 52 / 5%);
+   }
+
+   &__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      margin-bottom: 20px;
+   }
+
+   &__head-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   &__head-right {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+   }
+   
+   &__name {
+      font-size: 16px;
+      font-weight: 600;
+   }
+
+   &__date {
+      font-size: 14px;
+      align-self: flex-end;
+   }
+
+   &__mark {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      margin-bottom: 15px;
+   }
+
+   &__review-icon {
+      padding: 3px;
+      border-radius: 3px;
+      background-color: $red-color;
+      color: $white-color;
+   }
+
+   &__review-text {
+      font-size: 18px;
+      font-weight: 500;
+      color: $red-color;
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   &__content-box {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   &__content-box-title {
+      font-size: 16px;
+      font-weight: 500;
+   }
+
+   &__content-box-text {
+      font-size: 14px;
+      font-weight: 300;
+   }
+
+   &__marks {
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+   }
+
+   &__mark-like {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      background-color: #F2F5F9;
+   }
+
+   &__mark-like-icon {
+
+   }
+
+   &__mark-like-text {
+      font-size: 16px;
+   }
+
+   &__mark-dislike {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      background-color: #F2F5F9;
+   }
+
+   &__mark-dislike-icon {
+
+   }
+
+   &__mark-dislike-text {
+      font-size: 16px;
+   }
+}
+
+.product-comments__mark-like:hover .product-comments__mark-like-icon {
+   color: rgb(70, 209, 23);
+   transition: 0.2s ease-in-out;
+}
+
+.product-comments__mark-like:hover .product-comments__mark-like-text {
+   color: rgb(70, 209, 23);
+   transition: 0.2s ease-in-out;
+}
+
+.product-comments__mark-dislike:hover .product-comments__mark-dislike-icon {
+   color: $red-color;
+   transition: 0.2s ease-in-out;
+}
+
+.product-comments__mark-dislike:hover .product-comments__mark-dislike-text {
+   color: $red-color;
+   transition: 0.2s ease-in-out;
+}

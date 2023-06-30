@@ -1,0 +1,20 @@
+@import "../../../../scss/variables";
+
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
+   &__icon {
+      width: 40px;
+      height: 40px;
+      color: $red-color;
+   }
+
+   &__text {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: $red-color;
+   }
+}

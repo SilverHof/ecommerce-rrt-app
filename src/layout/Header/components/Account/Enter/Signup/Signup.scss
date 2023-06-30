@@ -1,0 +1,36 @@
+@import '../../../../../../scss/variables';
+
+.signup {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+
+   background-color: $white-color;
+   width: 66px;
+   height: 100%;
+
+   &__icon {
+      color: $black-color;
+      width: 30px;
+      height: 30px;
+      transition: 0.5s;
+   }
+
+   &__text {
+      font-size: 14px;
+      font-weight: 500;
+      color: $black-color;
+      transition: 0.5s;
+   }
+}
+
+.signup:hover .signup__icon {
+   color: $red-color;
+   transition: 0.5s;
+}
+
+.signup:hover .signup__text {
+   color: $red-color;
+   transition: 0.5s;
+}

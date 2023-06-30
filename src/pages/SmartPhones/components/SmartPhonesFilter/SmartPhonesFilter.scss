@@ -1,0 +1,43 @@
+@import '../../../../scss/variables';
+
+.smart-phones-filter {
+   grid-area: smart-phones-filter;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+
+
+   &__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+   }
+
+   &__title {
+      font-size: 24px;
+      font-weight: 600;
+      color: $red-color;
+   }
+
+   &__reset-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $white-color;
+
+      padding: 5px 10px;
+      border: 2px solid $red-color;
+      border-radius: 10px;
+      background-color: $white-color;
+
+      color: $red-color;
+   }
+
+   &__category {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+
+}

@@ -1,0 +1,174 @@
+@import '../../../../scss/variables';
+
+.product-actions {
+   width: 20%;
+
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+   padding-top: 30px;
+   &__price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      padding: 30px 10px 10px 10px;
+      width: 100%;
+
+      border-radius: 10px;
+      background-color: $red-color;
+
+      font-size: 50px;
+      font-weight: 600;
+      color: $white-color;
+
+      box-shadow: 0 6px 16px rgb(0 26 52 / 16%), 0 0 0 rgb(0 26 52 / 5%);
+   }
+
+   &__cashback {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px 10px;
+      width: 100%;
+
+      border-radius: 10px;
+      border: 5px solid $red-color;
+      background-color: $white-color;
+
+      font-size: 24px;
+      font-weight: 600;
+      color: $red-color;
+
+      box-shadow: 0 6px 16px rgb(0 26 52 / 16%), 0 0 0 rgb(0 26 52 / 5%);
+   }
+
+   &__add-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px 10px;
+      width: 100%;
+
+      border-radius: 10px;
+      background-color: $white-color;
+
+      font-size: 18px;
+      color: $red-color;
+   }
+
+   &__add-button-icon {
+      width: 30px;
+      height: 30px;
+      color: $red-color;
+   }
+
+   &__compare-button {
+      align-self: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      padding: 5px 0px;
+      background-color: #fff;
+
+      font-size: 18px;
+      font-weight: 500;
+
+      transition: 0.3s ease-in-out;
+   }
+
+   &__compare-button-icon {
+      width: 30px;
+      height: 30px;
+      color: $red-color;
+   }
+
+   &__share-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__share-box-info {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      font-size: 18px;
+      font-weight: 500;
+   }
+
+   &__share-box-icon {
+      width: 30px;
+      height: 30px;
+
+      color: $red-color;
+   }
+
+   &__share-box-links {
+      display: flex;
+      gap: 5px;
+   }
+
+   &__telegram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+
+      border-radius: 10px;
+      background-color: $telegram-color;
+   }
+
+   &__telegram-icon {
+      color: $footer-white-color;
+      width: 25px;
+      height: 25px;
+      padding-right: 2px;
+   }
+
+   &__instagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+
+      border-radius: 10px;
+      background-color: $instagram-color;
+
+   }
+
+   &__instagram-icon {
+      color: $footer-white-color;
+      width: 25px;
+      height: 25px;
+   }
+
+   &__twitter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+
+      border-radius: 10px;
+      background-color: $twitter-color;
+
+   }
+
+   &__twitter-icon {
+      color: $footer-white-color;
+      width: 25px;
+      height: 25px;
+   }
+
+}

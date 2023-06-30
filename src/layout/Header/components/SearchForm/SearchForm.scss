@@ -1,0 +1,41 @@
+@import "../../../../scss/variables";
+
+.search-form {
+   // width: 600px;
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 5px;
+   height: 44px;
+
+   &__input {
+      flex-grow: 1;
+
+      height: 100%;
+      padding: 0px 30px 0px 10px;
+      border: 2px solid $gray-color;
+      border-radius: 5px;
+
+      font-size: 18px;
+   }
+
+   &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 44px;
+      width: 44px;
+
+      // margin: 4px 1px 4px 2px;
+      background-color: $red-color;
+      border-radius: 5px;
+   }
+
+   &__button-icon {
+      width: 20px;
+      height: 20px;
+      color: $white-color;
+   }
+}

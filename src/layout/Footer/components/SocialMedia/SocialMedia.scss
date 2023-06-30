@@ -1,0 +1,88 @@
+@import '../../../../scss/variables';
+
+.social-media {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+
+   &__telegram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+
+      border-radius: 10px;
+      background-color: $footer-white-color;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+         background-color: $telegram-color;
+      }
+   }
+
+   &__telegram-icon {
+      color: $footer-black-color;
+      width: 30px;
+      height: 30px;
+      transition: 0.3s ease-in-out;
+   }
+
+   &__instagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+
+      border-radius: 10px;
+      background-color: $footer-white-color;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+         background-color: $instagram-color;
+      }
+   }
+
+   &__instagram-icon {
+      color: $footer-black-color;
+      width: 30px;
+      height: 30px;
+      transition: 0.3s ease-in-out;
+   }
+
+   &__twitter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+
+      border-radius: 10px;
+      background-color: $footer-white-color;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+         background-color: $twitter-color;
+      }
+   }
+
+   &__twitter-icon {
+      color: $footer-black-color;
+      width: 30px;
+      height: 30px;
+      transition: 0.3s ease-in-out;
+   }
+}
+
+.social-media__telegram:hover .social-media__telegram-icon {
+   color: $footer-white-color;
+}
+
+.social-media__instagram:hover .social-media__instagram-icon {
+   color: $footer-white-color;
+}
+
+.social-media__twitter:hover .social-media__twitter-icon {
+   color: $footer-white-color;
+}

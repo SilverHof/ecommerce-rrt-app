@@ -1,0 +1,19 @@
+@import '../../scss/variables';
+
+.product-details {
+
+   &__container {
+
+   }
+
+   &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+   }
+
+   &__head {
+      display: flex;
+      gap: 20px;
+   }
+}

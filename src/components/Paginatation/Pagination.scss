@@ -1,0 +1,93 @@
+@import '../../scss/variables';
+
+.pagination {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   &__previous-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100px;
+      height: 30px;
+
+      border-radius: 5px;
+      background-color: #000000;
+      color: #ffffff;
+
+      &_disable {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+   
+         width: 100px;
+         height: 30px;
+   
+         border-radius: 5px;
+
+         visibility: hidden;
+      }
+   }
+
+   &__page-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 30px;
+      height: 30px;
+
+      border-radius: 5px;
+      background-color: #000000;
+      color: #ffffff;
+
+      transition: 0.5s;
+
+      &_active {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+   
+         width: 30px;
+         height: 30px;
+   
+         border-radius: 5px;
+         background-color: #ffffff;;
+         color: #000000;
+   
+      }
+
+      &:hover {
+         background-color: #757575;
+         color: #000000;
+      }
+   }
+
+   &__next-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100px;
+      height: 30px;
+
+      border-radius: 5px;
+      background-color: #000000;
+      color: #ffffff;
+
+      &_disable {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+   
+         width: 100px;
+         height: 30px;
+   
+         border-radius: 5px;
+
+         visibility: hidden;
+      }
+   }
+}

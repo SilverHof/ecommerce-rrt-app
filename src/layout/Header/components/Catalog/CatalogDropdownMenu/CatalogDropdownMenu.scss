@@ -1,0 +1,66 @@
+@import '../../../../../scss/variables';
+
+
+.catalog-dropdown-menu {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 20px 10px;
+
+   position: absolute;
+   z-index: 1000;
+   top: 120%;
+   left: 50%;
+   transform: translate(-50%, 0%);
+   
+   border-radius: 10px;
+
+   // background-color: rgb(240, 240, 240);
+   background-color: $red-color;
+   -webkit-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
+
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      
+      padding: 7px 10px;
+
+      width: 260px;
+      border-radius: 5px;
+      &:hover {
+         background-color: $white-color;
+      }
+   }
+
+   &__item-icon {
+      color: $white-color;
+      width: 20px;
+      height: 20px;
+   }
+
+   &__item-text {
+      display: flex;
+      flex-grow: 1;
+      color: $white-color;
+      font-size: 16px;
+   }
+
+   &__item-arrow {
+      color: $white-color;
+   }
+}
+
+.catalog-dropdown-menu__item:hover .catalog-dropdown-menu__item-icon {
+   color: $red-color;
+}
+
+.catalog-dropdown-menu__item:hover .catalog-dropdown-menu__item-text {
+   color: $red-color;
+}
+
+.catalog-dropdown-menu__item:hover .catalog-dropdown-menu__item-arrow {
+   color: $red-color;
+}

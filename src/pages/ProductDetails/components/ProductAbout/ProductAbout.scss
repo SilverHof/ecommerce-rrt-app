@@ -1,0 +1,79 @@
+@import '../../../../scss/variables';
+
+.product-about {
+   width: 35%;
+
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+   padding-top: 30px;
+
+   &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   &__description-title {
+      font-size: 28px;
+      font-weight: 500;
+   }
+
+   &__description-text {
+      font-size: 16px;
+      color: #5f5f5f;
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   &__info-title {
+      font-size: 22px;
+      font-weight: 500;
+   }
+
+
+   &__info-columns {
+      width: 100%;
+      display: flex;
+      gap: 5px;
+   }
+
+   &__parameters-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   &__parameter {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+   }
+
+   &__parameter-text {
+      line-height: 18px;
+   }
+
+   &__parameter-decor {
+      flex-grow: 1;
+      border-bottom: 2px dotted #AB8E93;
+   }
+
+   &__values-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   &__value {
+      line-height: 18px;
+   }
+
+}

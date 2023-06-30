@@ -1,0 +1,16 @@
+@import '../../scss/variables';
+
+.footer {
+   background-color: $footer-gray-color;
+   &__container {
+
+   }
+
+   &__inner {
+      padding: 60px 0px;
+
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+   }
+}

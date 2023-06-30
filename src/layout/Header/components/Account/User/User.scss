@@ -1,0 +1,65 @@
+@import '../../../../../scss/variables';
+
+.user {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 20px;
+   height: 44px;
+   width: 100%;
+
+   // margin-left: 100px;
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      height: 100%;
+   }
+
+   &__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      background-color: $white-color;
+      width: 66px;
+      height: 100%;
+      
+   }
+
+   &__button-icon {
+      color: $black-color;
+      width: 30px;
+      height: 30px;
+      transition: 0.5s;
+   }
+
+   &__button-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: $black-color;
+      transition: 0.5s;
+   }
+
+   &__profile-button {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgb(111, 111, 111);
+
+      position: relative;
+   }
+}
+
+.user__button:hover .user__button-icon {
+   color: $red-color;
+   transition: 0.5s;
+}
+
+.user__button:hover .user__button-text {
+   color: $red-color;
+   transition: 0.5s;
+}

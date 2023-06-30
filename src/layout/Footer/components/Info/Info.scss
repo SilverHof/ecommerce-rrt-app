@@ -1,0 +1,25 @@
+@import '../../../../scss/variables';
+
+.info {
+   display: flex;
+   justify-content: space-evenly;
+   flex-grow: 1;
+
+   &__column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   &__title {
+      font-size: 18px;
+      font-weight: 500;
+      color: $footer-black-color;
+
+      margin-bottom: 5px;
+   }
+
+   &__item {
+      color: $footer-black-color;
+   }
+}

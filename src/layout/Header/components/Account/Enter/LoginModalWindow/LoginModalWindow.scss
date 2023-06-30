@@ -1,0 +1,141 @@
+@import '../../../../../../scss/variables';
+
+.login-modal-window {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: fixed;
+   z-index: 1000;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100vw;
+
+   backdrop-filter: blur(5px);
+
+   &_open {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+   }
+
+   &_close {
+      display: none;
+      height: 0;
+   }
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+
+      width: 400px;
+      padding: 20px 50px 20px 50px;
+      background-color: $white-color;
+      border-radius: 10px;
+
+      position: relative;
+
+      -webkit-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.75);
+   }
+
+   &__close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: $white-color;
+   }
+
+   
+   &__close-button-icon {
+      background-color: $white-color;
+      color: $red-color;
+   }
+
+   &__title {
+      font-size: 30px;
+      font-weight: 600;
+      color: $red-color;
+      padding: 30px 0px 40px 0px;
+      
+      align-self: center;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+   }
+
+   &__label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      color: $red-color;
+      font-size: 18px;
+      font-weight: 500;
+   }
+
+   &__email {
+      display: flex;
+      align-items: center;
+      height: 35px;
+
+      border: 2px solid $red-color;
+      border-radius: 5px;
+      padding: 0px 10px;
+
+      font-size: 18px;
+   }
+
+   &__password {
+      display: flex;
+      align-items: center;
+      height: 35px;
+
+      border: 2px solid $red-color;
+      border-radius: 5px;
+      padding: 0px 10px;
+
+      font-size: 18px;
+   }
+
+   &__remember-me {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   &__remember-me-checkbox {
+      width: 20px;
+      height: 20px;
+   }
+
+   &__remember-me-text {
+      font-size: 18px;
+      color: $red-color;
+   }
+
+   &__login-button {
+      align-self: center;
+      padding: 10px 20px;
+
+      background-color: $red-color;
+      border-radius: 5px;
+      color: $white-color;
+      font-size: 18px;
+      font-weight: 500;
+   }
+}

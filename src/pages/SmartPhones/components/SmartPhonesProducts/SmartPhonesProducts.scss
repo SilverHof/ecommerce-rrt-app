@@ -1,0 +1,9 @@
+@import '../../../../scss/variables';
+
+.smart-phones-products {
+   grid-area: smart-phones-products;
+   align-self: start;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-gap: 10px;
+}

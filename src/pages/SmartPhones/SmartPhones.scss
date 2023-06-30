@@ -1,0 +1,15 @@
+@import '../../scss/variables';
+
+.smart-phones {
+
+   &__container {
+
+   }
+
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+      grid-template-areas: "smart-phones-filter smart-phones-products smart-phones-products smart-phones-products smart-phones-products smart-phones-products";
+   }
+}
